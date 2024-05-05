@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* button */
+  .btn {
+    padding: 10px 20px;
+    color: white;
+    background: #233182;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 11px 14px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(66, 123, 181);
+    color: rgb(0, 0, 0);
+  }
+  
+  /* title */
+  .pre-title {
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    color: rgb(3, 139, 237);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 350;
+    font-size: 18px;
+  }
+  
+  .pre-title::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: rgb(0, 0, 0);
+    top: 50%;
+    left: 0;
+    display: block;
+  }
+  /* logo dan navbar menu */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    transform: 0.2s ease-in-out;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav li{
+      height: 30px;
+  }
+  
+  .nav a{
+      height: 100%;
+      padding: 0 30px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: black;
+  }
+  
+  nav a:hover{
+      background-color: #f0f0f0;
+  }
+  
+  nav li:first-child{
+      margin-right: auto;
+  }
+  
+  
+  
+  nav ul li a {
+    color: #233182;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  
+  .logo a {
+    color: #233182;
+  }
+  
+  
+  
+  /* home section */
+  #home {
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  
+  .home-name {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+    color: #233182;
+  }
+  
+  .home-right img {
+    width: 250px;
+  }
+  
+  .home-right {
+    display: flex;
+    justify-content: center;
+  }
+  
+  section {
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+  }
+  
+  /* about section */
+  #about {
+    background-color: rgb(116, 176, 235);
+    padding: 6rem 0;
+  }
+  
+  
+  .section-title-about {
+    text-align: center;
+    margin: 1rem 0 4rem;
+  }
+  
+  /* layout */
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 90px;
+    justify-content: center;
+    margin-top: 20px
+  }
+  
+  .about {
+    background: rgb(0, 27, 56);
+    border: none;
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease;
+  }
+  
+  .about:hover {
+    background-color: rgb(66, 123, 181);
+    color: rgb(0, 0, 0);
+    transform: translateY(-20px);
+  }
+  
+  .about h4 {
+    font-size: 20px;
+    color: white;
+    margin: 0.5rem 0;
+  }
+  
+  .about p {
+    font-size: 13px;
+    color: white;
+  }
+  
+  .about-icon {
+    background-color: rgb(207, 208, 209);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+  }
+  
+  .about-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* end about */
+  
+  /* skills & Experience */
+  #skills {
+    padding: 6rem 0;
+    background: white;
+  }
+  
+  .section-title-skills {
+    text-align: center;
+    margin: 1rem 0 4rem;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+  }
+  
+  .experience {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .experience line {
+    padding: 0 0.7rem;
+  }
+  
+  .experience .line div {
+    width: 2px;
+    height: 100%;
+    background: #233182;
+    position: relative;
+  }
+  
+  .experience-info {
+    margin: 0.3rem 0;
+  }
+  
+  .experience-date {
+    margin-bottom: 3rem;
+  }
+  
+  .experience .line div::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #233182;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+  }
+  
+  .skills-right {
+    line-height: 2rem;
+    padding: 0 1rem;
+  }
+  /* end of experience & skills */
+  
+  /* contact section */
+  #contact {
+    padding: 7rem 0;
+  }
+  
+  .contact-form div {
+    margin-bottom: 1.4rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.7rem 1.3rem;
+    font-family: "roboto", sans-serif;
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    resize: none;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #233182;
+  }
+  
+  .contact-form input::focus,
+  .contact-form textarea::focus {
+    outline: none;
+    border: 1px solid rgb(97, 159, 220) y;
+  }
+  
+  .contact.main-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-left {
+    flex: 1;
+  }
+  
+  .contact-right {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .contact-left,
+  .contact-right {
+    max-width: 45%; /* Sesuaikan lebar maksimum sesuai kebutuhan */
+  }
+  
+  .contact-item {
+    margin-bottom: 20px;
+  }
+  
+  .contact-item-detail {
+    color: #233182;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: #233182;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .btn-submit:hover {
+    box-shadow: 0 11px 14px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(66, 123, 181);
+    color: rgb(0, 0, 0);
+  }
+  /* End of contact  */
+  /* footer */
+  footer {
+    margin-bottom: 0;
+    padding: 2rem 0;
+    background: rgb(116, 176, 235);
+    text-align: center;
+    color: white;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-icons a {
+    margin: 0 0.5rem;
+  }
+  
+  .footer-icons a:hover {
+    fill: #233182;
+  }
+  
+  .footer-icons {
+    fill: rgb(116, 176, 235);
+  }
+  
